@@ -1,0 +1,33 @@
+{
+    "name": "donatix/test-package",
+    "description": "A donatix test package for the dev meeting",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ivan Ugrin",
+            "email": "ivan.ugrin@gmail.com"
+        }
+    ],
+    /*
+    When we have versions this will be the minimum version for which composer will seek. dev/stable/1.0
+    */
+    "minimum-stability": "dev",
+    /*
+    The dependancies on which the package relies.
+    */
+    "require": {},
+    /*
+    The folder from which composer should auto-load classes.
+    */
+    "autoload": {
+        "classmap": ["src/"]
+    },
+    /*
+    Extra configurations to optimize the structure of the project. Not mandatory.
+    */
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    }
+}
